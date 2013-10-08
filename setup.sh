@@ -4,7 +4,11 @@ echo "Backing up snippets to: ~/Library/Developer/Xcode/UserData/CodeSnippets.ba
 mv ~/Library/Developer/Xcode/UserData/CodeSnippets ~/Library/Developer/Xcode/UserData/CodeSnippets.backup
 
 # rm ~/Library/Developer/Xcode/UserData/CodeSnippets
-echo "installing new ones"
+echo "Installing new snippets"
 SRC_HOME=`pwd`
 ln -s ${SRC_HOME} ~/Library/Developer/Xcode/UserData/CodeSnippets
-echo "done"
+
+echo "Installing pre-commit hook"
+sh .install-precommit-hook.sh
+
+echo "Done"
