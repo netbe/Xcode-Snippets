@@ -36,9 +36,9 @@ for fileName in listing:
     # if snippet has a title
     if not snippetTitle == None:
 
-      # build filename (only a-zA-Z)
+      # build filename (only a-zA-Z0-9)
       snippetTitle = snippetTitle.replace("&","and")
-      allWords = re.findall("[a-zA-Z]+", snippetTitle)
+      allWords = re.findall("[a-zA-Z0-9]+", snippetTitle)
       uppercaseWords = map(lambda x: x.title(), allWords)
       newName = "".join(uppercaseWords) + ".codesnippet"
       newName = first_lower(newName)
