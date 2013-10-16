@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>hockey-3</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>ClassImplementation</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>#pragma mark - HockeyApp
+
+-(void)configureHockey
+{
+#ifdef &lt;#Prefix#&gt;_FEATURE_HOCKEY
+    NSString *hockeyAppId = [[[NSBundle mainBundle] infoDictionary] objectForKey:@"HOCKEY_APP_ID"];
+    [[BITHockeyManager sharedHockeyManager] configureWithIdentifier:hockeyAppId delegate:self];
+    [[BITHockeyManager sharedHockeyManager] startManager];
+    [[BITHockeyManager sharedHockeyManager].crashManager setCrashManagerStatus:BITCrashManagerStatusAutoSend];
+#endif
+}
+
+
+
+
+#pragma mark - BITCrashManagerDelegate
+
+#ifdef &lt;#Prefix#&gt;_FEATURE_HOCKEY
+- (void)crashManagerWillCancelSendingCrashReport:(BITCrashManager *)crashManager
+{
+    if ([self didCrashInLastSessionOnStartup]) {
+        // TODO shorten appLaunch to send crash reports
+    }
+}
+
+- (void)crashManager:(BITCrashManager *)crashManager didFailWithError:(NSError *)error
+{
+    if ([self didCrashInLastSessionOnStartup]) {
+        // TODO shorten appLaunch to send crash reports
+    }
+}
+
+- (void)crashManagerDidFinishSendingCrashReport:(BITCrashManager *)crashManager
+{
+    if ([self didCrashInLastSessionOnStartup]) {
+        // TODO shorten appLaunch to send crash reports
+    }
+}
+#endif</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>CCCA9657-E472-466E-B79E-AA87BDF61375</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Objective-C</string>
+	<key>IDECodeSnippetSummary</key>
+	<string>configure HockeyManager and delegate methods</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>Hockey Setup part 3</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>2</integer>
+</dict>
+</plist>

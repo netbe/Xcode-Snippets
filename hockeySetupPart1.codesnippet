@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>hockey-1</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>TopLevel</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>#ifdef &lt;#Prefix#&gt;_FEATURE_HOCKEY
+    #import "HockeySDK.h"
+@interface AppDelegate()&lt;BITHockeyManagerDelegate,BITCrashManagerDelegate&gt;
+#else
+@interface AppDelegate()
+#endif</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>37F7B9C4-B19A-427E-865B-7548C2554DC8</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Objective-C</string>
+	<key>IDECodeSnippetSummary</key>
+	<string>import and interface protocols</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>Hockey Setup part 1</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>2</integer>
+</dict>
+</plist>
