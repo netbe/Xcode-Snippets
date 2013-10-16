@@ -61,11 +61,66 @@ Shortcut: `nsenum`
         <#value2#>
     };
 
-**hockeySetupPart.codesnippet**  (Hockey Setup part 2)  
+**hockeySetupPart1.codesnippet**  (Hockey Setup part 1)  
+Shortcut: `hockey-1`  
+import and interface protocols
+
+    #ifdef <#Prefix#>_FEATURE_HOCKEY
+        #import "HockeySDK.h"
+    @interface AppDelegate()<BITHockeyManagerDelegate,BITCrashManagerDelegate>
+    #else
+    @interface AppDelegate()
+    #endif
+
+**hockeySetupPart2.codesnippet**  (Hockey Setup part 2)  
 Shortcut: `hockey-3`  
 
 
         [self configureHockey];
+
+**hockeySetupPart3.codesnippet**  (Hockey Setup part 3)  
+Shortcut: `hockey-3`  
+configure HockeyManager and delegate methods
+
+    #pragma mark - HockeyApp
+    
+    -(void)configureHockey
+    {
+    #ifdef <#Prefix#>_FEATURE_HOCKEY
+        NSString *hockeyAppId = [[[NSBundle mainBundle] infoDictionary] objectForKey:@"HOCKEY_APP_ID"];
+        [[BITHockeyManager sharedHockeyManager] configureWithIdentifier:hockeyAppId delegate:self];
+        [[BITHockeyManager sharedHockeyManager] startManager];
+        [[BITHockeyManager sharedHockeyManager].crashManager setCrashManagerStatus:BITCrashManagerStatusAutoSend];
+    #endif
+    }
+    
+    
+    
+    
+    #pragma mark - BITCrashManagerDelegate
+    
+    #ifdef <#Prefix#>_FEATURE_HOCKEY
+    - (void)crashManagerWillCancelSendingCrashReport:(BITCrashManager *)crashManager
+    {
+        if ([self didCrashInLastSessionOnStartup]) {
+            // TODO shorten appLaunch to send crash reports
+        }
+    }
+    
+    - (void)crashManager:(BITCrashManager *)crashManager didFailWithError:(NSError *)error
+    {
+        if ([self didCrashInLastSessionOnStartup]) {
+            // TODO shorten appLaunch to send crash reports
+        }
+    }
+    
+    - (void)crashManagerDidFinishSendingCrashReport:(BITCrashManager *)crashManager
+    {
+        if ([self didCrashInLastSessionOnStartup]) {
+            // TODO shorten appLaunch to send crash reports
+        }
+    }
+    #endif
 
 **stringConstant.codesnippet**  (String constant)  
 Shortcut: `constStr`  
