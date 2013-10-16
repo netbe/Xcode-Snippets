@@ -29,6 +29,12 @@ Shortcut: `appversion`
         versionInfo.text = infos;
     
 
+**blockSyntaxAsALocalVariable.codesnippet**  (Block syntax as a local variable)  
+Shortcut: `blockVar`  
+
+
+    <#returnType#> (^<#blockName#>)(<#parameterTypes#>) = ^<#returnType#>(<#parameters#>) {...};
+
 **callnumber.codesnippet**  (callNumber)  
 Shortcut: `callNumber`  
 
