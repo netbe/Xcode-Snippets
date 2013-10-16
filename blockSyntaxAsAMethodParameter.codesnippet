@@ -3,21 +3,21 @@
 <plist version="1.0">
 <dict>
 	<key>IDECodeSnippetCompletionPrefix</key>
-	<string>blockVar</string>
+	<string>blockMethodParam</string>
 	<key>IDECodeSnippetCompletionScopes</key>
 	<array>
-		<string>CodeBlock</string>
+		<string>ClassImplementation</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string>&lt;#returnType#&gt; (^&lt;#blockName#&gt;)(&lt;#parameterTypes#&gt;) = ^&lt;#returnType#&gt;(&lt;#parameters#&gt;) {...};</string>
+	<string>(&lt;#returnType#&gt; (^)(&lt;#parameterTypes#&gt;))&lt;#blockName#&gt;</string>
 	<key>IDECodeSnippetIdentifier</key>
-	<string>31523ED7-5CF0-4822-A04A-A715EF1F733B</string>
+	<string>047A479B-7914-4040-B3AE-880A42758D0C</string>
 	<key>IDECodeSnippetLanguage</key>
 	<string>Xcode.SourceCodeLanguage.Objective-C</string>
 	<key>IDECodeSnippetSummary</key>
 	<string>http://fuckingblocksyntax.com/</string>
 	<key>IDECodeSnippetTitle</key>
-	<string>Block syntax as a local variable</string>
+	<string>Block syntax as a method parameter</string>
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>

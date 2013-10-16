@@ -31,9 +31,34 @@ Shortcut: `appversion`
 
 **blockSyntaxAsALocalVariable.codesnippet**  (Block syntax as a local variable)  
 Shortcut: `blockVar`  
-
+http://fuckingblocksyntax.com/
 
     <#returnType#> (^<#blockName#>)(<#parameterTypes#>) = ^<#returnType#>(<#parameters#>) {...};
+
+**blockSyntaxAsAMethodParameter.codesnippet**  (Block syntax as a method parameter)  
+Shortcut: `blockMethodParam`  
+http://fuckingblocksyntax.com/
+
+    (<#returnType#> (^)(<#parameterTypes#>))<#blockName#>
+
+**blockSyntaxAsAnArgumentToAMethodCall.codesnippet**  (Block syntax as an argument to a method call)  
+Shortcut: `blockMethodCall`  
+http://fuckingblocksyntax.com/
+
+    ^<#returnType#> (<#parameters#>) {...}
+
+**blockSyntaxAsAProperty.codesnippet**  (Block syntax as a property)  
+Shortcut: `blockProperty`  
+http://fuckingblocksyntax.com/
+
+    @property (nonatomic, copy) <#returnType#> (^<#blockName#>)(<#parameterTypes#>);
+
+**blockSyntaxAsATypedef.codesnippet**  (Block syntax as a typedef)  
+Shortcut: `blockTypedef`  
+http://fuckingblocksyntax.com/
+
+    typedef <#returnType#> (^<#TypeName#>)(<#parameterTypes#>);
+    <#TypeName#> <#blockName#> = ^(<#parameters#>) {...}
 
 **callnumber.codesnippet**  (callNumber)  
 Shortcut: `callNumber`  
