@@ -11,5 +11,7 @@ python .renameSnippets.py
 python .generateDescription.py
 
 # stage updates files 
-#git add -A
+git add *.codesnippet
+git add Readme.md 
+
 
