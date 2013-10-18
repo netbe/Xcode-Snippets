@@ -3,24 +3,27 @@
 <plist version="1.0">
 <dict>
 	<key>IDECodeSnippetCompletionPrefix</key>
-	<string>blockProperty</string>
+	<string>optionsDef</string>
 	<key>IDECodeSnippetCompletionScopes</key>
 	<array>
-		<string>ClassInterfaceMethods</string>
+		<string>TopLevel</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string>@property (nonatomic, copy) &lt;#returnType#&gt; (^&lt;#blockName#&gt;)(&lt;#parameterTypes#&gt;);</string>
+	<string>typedef NS_OPTIONS(&lt;#type#&gt;, &lt;#name#&gt;) {
+    &lt;#name#&gt;Default = 0,
+    &lt;#options1#&gt; = 1 &lt;&lt; 0,
+    &lt;#options2#&gt;  = 1 &lt;&lt; 1,
+    &lt;#options3#&gt;  = 1 &lt;&lt; 2
+};</string>
 	<key>IDECodeSnippetIdentifier</key>
-	<string>D5E002F2-0792-401A-B523-52E9E5641499</string>
+	<string>7E2147AA-2F18-4DFD-ABD5-126A3DD5F4C5</string>
 	<key>IDECodeSnippetLanguage</key>
-	<string>Xcode.SourceCodeLanguage.Objective-C</string>
-	<key>IDECodeSnippetSummary</key>
-	<string>http://fuckingblocksyntax.com/</string>
+	<string>Xcode.SourceCodeLanguage.Objective-C-Plus-Plus</string>
 	<key>IDECodeSnippetTitle</key>
-	<string>Block syntax as a property</string>
+	<string>NS Options</string>
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>
-	<integer>2</integer>
+	<integer>0</integer>
 </dict>
 </plist>

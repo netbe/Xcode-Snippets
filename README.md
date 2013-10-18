@@ -153,6 +153,17 @@ configure HockeyManager and delegate methods
     }
     #endif
 
+**nsOptions.codesnippet**  (NS Options)  
+Shortcut: `optionsDef`  
+
+
+    typedef NS_OPTIONS(<#type#>, <#name#>) {
+        <#name#>Default = 0,
+        <#options1#> = 1 << 0,
+        <#options2#>  = 1 << 1,
+        <#options3#>  = 1 << 2
+    };
+
 **stringConstant.codesnippet**  (String constant)  
 Shortcut: `constStr`  
 
