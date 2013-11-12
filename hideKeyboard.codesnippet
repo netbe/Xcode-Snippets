@@ -3,19 +3,22 @@
 <plist version="1.0">
 <dict>
 	<key>IDECodeSnippetCompletionPrefix</key>
-	<string>ppstrong</string>
+	<string>keyboardHide</string>
 	<key>IDECodeSnippetCompletionScopes</key>
 	<array>
-		<string>ClassInterfaceMethods</string>
+		<string>CodeExpression</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string>@property(nonatomic, strong)&lt;#objectType#&gt;* &lt;#variable#&gt;;</string>
+	<string>    [[UIApplication sharedApplication] sendAction:@selector(resignFirstResponder)
+                                               to:nil
+                                             from:self
+                                         forEvent:nil];</string>
 	<key>IDECodeSnippetIdentifier</key>
-	<string>62160F24-128F-495A-9D7C-3A14D831A8C2</string>
+	<string>63142379-C34C-4178-BB0D-C1EE6EB099D2</string>
 	<key>IDECodeSnippetLanguage</key>
 	<string>Xcode.SourceCodeLanguage.Objective-C</string>
 	<key>IDECodeSnippetTitle</key>
-	<string>Strong property</string>
+	<string>Hide keyboard</string>
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>

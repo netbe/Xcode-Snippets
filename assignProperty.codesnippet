@@ -3,19 +3,19 @@
 <plist version="1.0">
 <dict>
 	<key>IDECodeSnippetCompletionPrefix</key>
-	<string>ppstrong</string>
+	<string>ppassign</string>
 	<key>IDECodeSnippetCompletionScopes</key>
 	<array>
 		<string>ClassInterfaceMethods</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string>@property(nonatomic, strong)&lt;#objectType#&gt;* &lt;#variable#&gt;;</string>
+	<string>@property(nonatomic, assign)&lt;#objectType#&gt; &lt;#variable#&gt;;</string>
 	<key>IDECodeSnippetIdentifier</key>
-	<string>62160F24-128F-495A-9D7C-3A14D831A8C2</string>
+	<string>CE3662D5-C9A8-40D8-8F7D-98219B3B3AE8</string>
 	<key>IDECodeSnippetLanguage</key>
 	<string>Xcode.SourceCodeLanguage.Objective-C</string>
 	<key>IDECodeSnippetTitle</key>
-	<string>Strong property</string>
+	<string>Assign property</string>
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>

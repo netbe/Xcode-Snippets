@@ -15,6 +15,12 @@ This script executes automatically before each commit (pre-commit hook). You can
 
 ## Snippet Descriptions
 
+**assignProperty.codesnippet**  (Assign property)  
+Shortcut: `ppassign`  
+
+
+    @property(nonatomic, assign)<#objectType#> <#variable#>;
+
 **enum.codesnippet**  (enum)  
 Shortcut: `nsenum`  
 
@@ -23,6 +29,15 @@ Shortcut: `nsenum`
         <#value1#>,
         <#value2#>
     };
+
+**hideKeyboard.codesnippet**  (Hide keyboard)  
+Shortcut: `keyboardHide`  
+
+
+        [[UIApplication sharedApplication] sendAction:@selector(resignFirstResponder)
+                                                   to:nil
+                                                 from:self
+                                             forEvent:nil];
 
 **stringConstant.codesnippet**  (String constant)  
 Shortcut: `constStr`  
