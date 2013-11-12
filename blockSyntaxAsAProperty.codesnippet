@@ -3,22 +3,21 @@
 <plist version="1.0">
 <dict>
 	<key>IDECodeSnippetCompletionPrefix</key>
-	<string>weak</string>
+	<string>blockProperty</string>
 	<key>IDECodeSnippetCompletionScopes</key>
 	<array>
-		<string>CodeBlock</string>
+		<string>ClassInterfaceMethods</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string>__weak __typeof(&amp;*self)weakSelf = self;
-</string>
+	<string>@property (nonatomic, copy) &lt;#returnType#&gt; (^&lt;#blockName#&gt;)(&lt;#parameterTypes#&gt;);</string>
 	<key>IDECodeSnippetIdentifier</key>
-	<string>E8491AC7-1E71-4AEB-8E43-DD0D857737CC</string>
+	<string>D5E002F2-0792-401A-B523-52E9E5641499</string>
 	<key>IDECodeSnippetLanguage</key>
 	<string>Xcode.SourceCodeLanguage.Objective-C</string>
 	<key>IDECodeSnippetSummary</key>
-	<string>Declare weak reference to self</string>
+	<string>http://fuckingblocksyntax.com/</string>
 	<key>IDECodeSnippetTitle</key>
-	<string>__weak self</string>
+	<string>Block syntax as a property</string>
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>

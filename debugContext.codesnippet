@@ -2,23 +2,23 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
-	<key>IDECodeSnippetCompletionPrefix</key>
-	<string>weak</string>
 	<key>IDECodeSnippetCompletionScopes</key>
 	<array>
 		<string>CodeBlock</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string>__weak __typeof(&amp;*self)weakSelf = self;
-</string>
+	<string>NSLog(@"Context: %@",&lt;#writeContext#&gt;);
+                                        NSLog(@"PS Coord : %@",&lt;#writeContext#&gt;.persistentStoreCoordinator);
+                                        NSLog(@"MOM : %@", &lt;#writeContext#&gt;.persistentStoreCoordinator.managedObjectModel);
+                                        NSLog(@"Entities : %@",[[&lt;#writeContext#&gt;.persistentStoreCoordinator.managedObjectModel entities] valueForKey:@"name"]);</string>
 	<key>IDECodeSnippetIdentifier</key>
-	<string>E8491AC7-1E71-4AEB-8E43-DD0D857737CC</string>
+	<string>F9A9753E-71F5-48F0-BF28-4305B79939F5</string>
 	<key>IDECodeSnippetLanguage</key>
 	<string>Xcode.SourceCodeLanguage.Objective-C</string>
 	<key>IDECodeSnippetSummary</key>
-	<string>Declare weak reference to self</string>
+	<string>Logs for CoreData Context</string>
 	<key>IDECodeSnippetTitle</key>
-	<string>__weak self</string>
+	<string>debug Context</string>
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>

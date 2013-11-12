@@ -3,22 +3,27 @@
 <plist version="1.0">
 <dict>
 	<key>IDECodeSnippetCompletionPrefix</key>
-	<string>weak</string>
+	<string>appversion</string>
 	<key>IDECodeSnippetCompletionScopes</key>
 	<array>
 		<string>CodeBlock</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string>__weak __typeof(&amp;*self)weakSelf = self;
+	<string>    NSDictionary *infoDictionary = [[NSBundle mainBundle] infoDictionary];
+    NSString *version = [infoDictionary objectForKey:@"CFBundleShortVersionString"];
+    NSString *build = [infoDictionary objectForKey:@"CFBundleVersion"];
+    NSString *infos = [NSString stringWithFormat:@"v.%@ (build %@)",
+                       version, build];
+    
+    UILabel *versionInfo = [[UILabel alloc] init];
+    versionInfo.text = infos;
 </string>
 	<key>IDECodeSnippetIdentifier</key>
-	<string>E8491AC7-1E71-4AEB-8E43-DD0D857737CC</string>
+	<string>EC9B1411-F26E-4DDB-AC43-35FF41E26F44</string>
 	<key>IDECodeSnippetLanguage</key>
 	<string>Xcode.SourceCodeLanguage.Objective-C</string>
-	<key>IDECodeSnippetSummary</key>
-	<string>Declare weak reference to self</string>
 	<key>IDECodeSnippetTitle</key>
-	<string>__weak self</string>
+	<string>app version label</string>
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>

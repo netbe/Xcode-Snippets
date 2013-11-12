@@ -3,25 +3,27 @@
 <plist version="1.0">
 <dict>
 	<key>IDECodeSnippetCompletionPrefix</key>
-	<string>weak</string>
+	<string>optionsDef</string>
 	<key>IDECodeSnippetCompletionScopes</key>
 	<array>
-		<string>CodeBlock</string>
+		<string>TopLevel</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string>__weak __typeof(&amp;*self)weakSelf = self;
-</string>
+	<string>typedef NS_OPTIONS(&lt;#type#&gt;, &lt;#name#&gt;) {
+    &lt;#name#&gt;Default = 0,
+    &lt;#options1#&gt; = 1 &lt;&lt; 0,
+    &lt;#options2#&gt;  = 1 &lt;&lt; 1,
+    &lt;#options3#&gt;  = 1 &lt;&lt; 2
+};</string>
 	<key>IDECodeSnippetIdentifier</key>
-	<string>E8491AC7-1E71-4AEB-8E43-DD0D857737CC</string>
+	<string>7E2147AA-2F18-4DFD-ABD5-126A3DD5F4C5</string>
 	<key>IDECodeSnippetLanguage</key>
-	<string>Xcode.SourceCodeLanguage.Objective-C</string>
-	<key>IDECodeSnippetSummary</key>
-	<string>Declare weak reference to self</string>
+	<string>Xcode.SourceCodeLanguage.Objective-C-Plus-Plus</string>
 	<key>IDECodeSnippetTitle</key>
-	<string>__weak self</string>
+	<string>NS Options</string>
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>
-	<integer>2</integer>
+	<integer>0</integer>
 </dict>
 </plist>

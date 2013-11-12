@@ -3,22 +3,26 @@
 <plist version="1.0">
 <dict>
 	<key>IDECodeSnippetCompletionPrefix</key>
-	<string>weak</string>
+	<string>hockey-1</string>
 	<key>IDECodeSnippetCompletionScopes</key>
 	<array>
-		<string>CodeBlock</string>
+		<string>TopLevel</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string>__weak __typeof(&amp;*self)weakSelf = self;
-</string>
+	<string>#ifdef &lt;#Prefix#&gt;_FEATURE_HOCKEY
+    #import "HockeySDK.h"
+@interface AppDelegate()&lt;BITHockeyManagerDelegate,BITCrashManagerDelegate&gt;
+#else
+@interface AppDelegate()
+#endif</string>
 	<key>IDECodeSnippetIdentifier</key>
-	<string>E8491AC7-1E71-4AEB-8E43-DD0D857737CC</string>
+	<string>37F7B9C4-B19A-427E-865B-7548C2554DC8</string>
 	<key>IDECodeSnippetLanguage</key>
 	<string>Xcode.SourceCodeLanguage.Objective-C</string>
 	<key>IDECodeSnippetSummary</key>
-	<string>Declare weak reference to self</string>
+	<string>import and interface protocols</string>
 	<key>IDECodeSnippetTitle</key>
-	<string>__weak self</string>
+	<string>Hockey Setup part 1</string>
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>
